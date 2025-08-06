@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+
+  <!-- Google Font: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Get in touch</h2>
+        <hr />
+      </div>
+
+      <!-- Web3Forms Access Key (keep private in real apps) -->
+      <input type="hidden" name="access_key" value="c8d0b7f8-cb2c-4400-a26e-238de1572c48" />
+
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required />
+      <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required />
+      <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+      <button type="submit">
+        Submit 
+      </button>
+    </form>
+
+    <div class="contact-right">
+    </div>
+  </div>
+</body>
+</html>
